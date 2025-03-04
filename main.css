@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #b4c4ce;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  background-color: #020b13;
+  box-shadow: 10px 0px 30px #060c13;
+  width: 100%;
+  top: 0;
+}
+
+.nav-logo {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #020b13;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  z-index: 10;
+  border-left: 1px solid #0c1629  ; 
+  transition: right 300ms ease-in-out;
+}
+
+nav.show {
+  right: 0;
+}
+
+nav a{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  width: 250px;
+  padding:  20px 40px;
+  transition: all 150ms ease;
+}
+
+nav a:hover{
+  background-color: #b4c4ce;
+  color: #081124;
+}
+
+.home-container {
+  margin-top: 90px ;
+  padding: 2rem;
+}
+
+#slide-open {
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 1em;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#slide-close {
+  background-color: transparent;
+  border-radius: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.MissionVission {
+  background: rgb(49, 44, 44);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(49, 44, 44, 0.5);
+  width: auto;
+  color: white;
+}
+      
+.carousel {
+  position: relative;
+}
+
+.carousel__item {
+  width: 50%;
+  height: 500%;
+  padding: 1em;
+  background-color: #335675;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+  display: none;
+}
+
+.carousel__item--selected {
+  display: block !important;
+}
+
+.carousel__nav {
+  width: 10%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 40%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.carousel__button--selected {
+  background: rgba(5, 20, 25, 0.5);
+}
+  
